@@ -415,6 +415,56 @@ body, html {
     backdrop-filter: blur(20px);
 }
 
+
+.koncontainer{
+    background-image: url(img/1940-Improve\ the\ init-sd3_medium-207365227.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    border-radius: 5px;
+    box-shadow: -20px 10px 20px rgba(0,0,0, 1);
+    backdrop-filter: blur(20px);
+
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    margin-top: 2.5%;
+    padding: 0;
+}
+
+.konbox{
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.adpad{
+    padding: 30px;
+    margin-left: 5%;
+}
+
+.mailpad{
+    padding: 30px;
+    position: relative;
+    top: 80%;
+    left: 50%;
+}
+
+.konfit{
+    width: fit-content;
+    height: auto;
+}
+
+td{
+    color:white;
+    font-size: 35px;
+}
+
 #topbtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
