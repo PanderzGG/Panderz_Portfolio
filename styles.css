@@ -21,14 +21,35 @@ body, html {
     
     height: calc(100vh -(100vh - 100%));
     width: calc(100vw - (100vw - 100%));
-    margin: 0;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    display: flex;
+    justify-content: center;
+
     padding: 0;
+    margin-top: 0;
 }
 
 .bhidden{
     overflow: hidden;
 }
-  
+
+.content{
+    width: 70%;
+    height: 100vh;
+
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
 /*Karriere HTML*/
 .Kopf{
     height: 24.9vh;
@@ -40,49 +61,23 @@ body, html {
 
 .Kopf1{
     width: 50%;
-    height: 24.9vh;
+    height: 25vh;
     margin: 0;
     padding: 0;
 
     display: flex;
-    justify-content: space-evenly;
-
-}
-
-#mod{
-    padding: 0px 0px 0px 0px;
-    font-size: 40px;
-    width: fit-content;
-    height: fit-content;
-    margin: 0;
-    text-align: left;
-    font-weight: bold;
-
-    text-shadow: -11px 2px 15px rgba(100,100,100,.5);
-    transform: translate( -27%, -15%);
-}
-
-#web{
-    width: fit-content;
-    height: fit-content;
-    padding: 0px 0px 0px 0px;
-    font-size: 60px;
-    font-weight: bold;
-    margin: 0;
-
-    text-shadow: -11px 2px 15px rgba(100,100,100,.5);
-
-    transform: translate( -30%, 20%)
+    flex-basis: auto;
 }
 
 .Kopf2{
     width: 50%;
-    height: 24.9vh;
+    height: 25vh;
+    margin: 0;
+    padding-right: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
+    overflow: hidden;
 }
 
 .panda{
@@ -91,9 +86,31 @@ body, html {
     border: 20px solid black;
 
     box-shadow: -30px 2px 40px black;
+}
+
+#mod{
+    padding: 0;
+    font-size: 30px;
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    text-align: left;
+    font-weight: bold;
+
+    text-shadow: -11px 2px 15px rgba(100,100,100,.5);
 
 }
 
+#web{
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+
+    text-shadow: -11px 2px 15px rgba(100,100,100,.5);
+}
 
 .sidenav {
     height: 100%; 
@@ -133,6 +150,7 @@ body, html {
     display: block;
     width: 100%;
     border: none;
+    border-radius: 5px;
     background-color: #111;
     color:#818181;
     padding: 14px 28px;
@@ -148,10 +166,7 @@ body, html {
     box-shadow: -3px 2px 10px #111;
 }
 
-#main {
-    transition: margin-left .5s;
-    padding: 0;    
-}
+
 
 .bwrapper{
     display: flex;
@@ -173,54 +188,44 @@ body, html {
 
 }
 
-.ancontainer{
+
+.kcontainer{
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-top: 1%;
+    margin-bottom:  1%;
+    
+    border-radius: 5px;
+    box-shadow: -20px 10px 20px rgba(0,0,0, 1);
+
+    height: fit-content;
+    width: 100%;
+}
+
+.kcontainer:nth-child(2){
     background-image: url(img/code-1076536_1920.jpg);
-    background-size: cover;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-      
-    overflow: hidden;
-    height: 500px;
 }
-
-.procontainer{
+.kcontainer:nth-child(3){
     background-image: url(img/pexels-brett-sayles-4280696.jpg);
-    background-size: cover;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    overflow: hidden;
-    height: 500px;
 }
-
-.polcontainer{
+.kcontainer:nth-child(4){
     background-image: url(img/Bundespolizei_Wallpaper_BFE-1-scaled.jpg);
-    background-size: cover;
-    background-position: 0px -100px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    overflow: hidden;
-    height: 500px;
 }
-
-.drucontainer{
+.kcontainer:nth-child(5){
     background-image: url(img/29783-031_g_Klein.jpg);
-    background-size: cover;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    overflow: hidden;
-    height: 500px;
 }
 
 .jahr{
-    width: 500px;
+    width: 300px;
     height: 300px;
+    padding: 0.4%;
+    margin: 3%;
     color: white;
     text-shadow: 1px 1px 2px black;
-
+    width: 40%;
     background-color: rgba(17,17,17, 0.8);
 
     border: 1px solid rgba(25,25,25, 0.8);
@@ -232,8 +237,14 @@ body, html {
 }
 
 .beruftext{
-    width: 1000px;
-    padding: 0.4%;
+    width: 50%;
+    height: fit-content;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 3%;
+    
+    text-align: justify;
+
     height: 300px;
     
     background-color: rgba(17,17,17, 0.8);
@@ -243,8 +254,7 @@ body, html {
     backdrop-filter: blur(20px);
 
     color: white;
-    padding: 20px;
-    font-size: 25px;
+    font-size: 20px;
     text-shadow: 1px 1px 2px black;
 }
 
@@ -256,6 +266,10 @@ body, html {
     position: relative;
     font-size: 35px;
     top: 0.4%;
+}
+
+.mg{
+    margin-top: 10%;
 }
 
 .h{
@@ -271,27 +285,11 @@ body, html {
     background-color: rgba(17,17,17, 0.8);
     border: 1px solid rgba(25,25,25, 0.8);
     border-radius: 5px;
-    box-shadow: -20px 10px 20px rgba(0,0,0, 1);;
+    box-shadow: -20px 10px 20px rgba(0,0,0, 1);
     backdrop-filter: blur(20px);
 
     color: white;
 }
-
-.fulljustify {
-    text-align: justify;
-}
-.fulljustify:after {
-    content: "";
-    display: inline-block;
-    width: 100%;
-  }
-
-
-
-
-
-
-
 
 /*Über Mich CSS*/
 .umain {
@@ -304,6 +302,10 @@ body, html {
 
 .uhmain, .upmain {
     text-align: center;
+    height: fit-content;
+    font-size: 15px;
+
+    margin-top: 2.5%;
 }
 
 
@@ -314,6 +316,7 @@ body, html {
 
 .up {
     padding: 20px;
+    
 }
 
 
@@ -324,18 +327,17 @@ body, html {
     background-size: cover;
     background-repeat: no-repeat;
 
+    border-radius: 5px;
+    box-shadow: -20px 10px 20px rgba(0,0,0, 1);
+    backdrop-filter: blur(20px);
+
+    height: 50%;
+
     display: flex;
     justify-content: center;
-    
-
-
-    
+    align-items: center;
     background-repeat: no-repeat;
-
-    height: 100vh;
-    width: 100vw;
-
-    margin: 0;
+    margin-top: 2.5%;
     padding: 0;
 
     /*Hacky thing I will change*/
@@ -349,7 +351,6 @@ body, html {
     padding-left: 100px;
     padding-right: 100px;
     height: fit-content;
-    margin-top: 10%;
 
     background-color: rgba(17,17,17, 0.8);
 
@@ -373,8 +374,16 @@ body, html {
     display: flex;
     flex-direction: column;
 
-    height: 100vh;
-    width: 100vw;
+    margin-top: 2.5%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 5px;
+    box-shadow: -20px 10px 20px rgba(0,0,0, 1);
+    backdrop-filter: blur(20px);
+
+    height: fit-content;
+    width: 100%;
 }
 
 .shead {
