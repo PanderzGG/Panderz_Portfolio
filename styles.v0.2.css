@@ -1,0 +1,488 @@
+:root{
+    --hbg: rgba(6,250,255,1);
+    --nbg: rgba(16,132,116,1);
+    --bbg: rgba(221,222,223,1);
+    --hov: rgba(211, 206, 229, 0.2);
+
+    font-family: 'Agile';
+}
+
+@font-face {
+    font-family: Agile;
+    src: url(font/AgileSans-Regular.otf);
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+ }
+
+body, html {
+    
+    height: calc(100vh -(100vh - 100%));
+    width: calc(100vw - (100vw - 100%));
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 0;
+    margin-top: 0;
+}
+
+.bhidden{
+    overflow: hidden;
+}
+
+.content{
+    width: 70%;
+    height: 100vh;
+
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+/*Karriere HTML*/
+.Kopf{
+    height: 24.9vh;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.Kopf1{
+    width: 50%;
+    height: 25vh;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-basis: auto;
+}
+
+.Kopf2{
+    width: 50%;
+    height: 25vh;
+    margin: 0;
+    padding-right: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.panda{
+    border-radius: 100%;
+    scale: 20%;
+    border: 20px solid black;
+
+    box-shadow: -30px 2px 40px black;
+}
+
+#mod{
+    padding: 0;
+    font-size: 30px;
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    text-align: left;
+    font-weight: bold;
+
+    text-shadow: -11px 2px 15px rgba(100,100,100,.5);
+
+}
+
+#web{
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+
+    text-shadow: -11px 2px 15px rgba(100,100,100,.5);
+}
+
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed;
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.oNav{
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #111;
+    color:#818181;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+.oNav:hover{
+    background-color: #111;
+    color: #818181;
+    box-shadow: -3px 2px 10px #111;
+}
+
+
+
+.bwrapper{
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+}
+
+.hberuf{
+    display: flex;
+    justify-content: left;
+    padding: auto;
+    margin: auto;
+    color: black;
+    font-size: 45px;
+
+    text-shadow: -11px 2px 15px rgba(100,100,100,.5);
+
+}
+
+
+.kcontainer{
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-top: 1%;
+    margin-bottom:  1%;
+    
+    border-radius: 5px;
+    box-shadow: -20px 10px 20px rgba(0,0,0, 1);
+
+    height: fit-content;
+    width: 100%;
+}
+
+.kcontainer:nth-child(2){
+    background-image: url(img/htmlcode.jpg);
+}
+.kcontainer:nth-child(3){
+    background-image: url(img/glasfaser.jpg);
+}
+.kcontainer:nth-child(4){
+    background-image: url(img/bpol.jpg);
+}
+.kcontainer:nth-child(5){
+    background-image: url(img/druck.jpg);
+}
+
+.jahr{
+    width: 300px;
+    height: 300px;
+    padding: 0.4%;
+    margin: 3%;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    width: 40%;
+    background-color: rgba(17,17,17, 0.8);
+
+    border: 1px solid rgba(25,25,25, 0.8);
+    border-radius: 5px;
+    box-shadow: -20px 10px 20px rgba(0,0,0, 1);;
+    backdrop-filter: blur(20px);
+    
+
+}
+
+.beruftext{
+    width: 50%;
+    height: fit-content;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 3%;
+    
+    text-align: justify;
+
+    height: 300px;
+    
+    background-color: rgba(17,17,17, 0.8);
+    border: 1px solid rgba(25,25,25, 0.8);
+    border-radius: 5px;
+    box-shadow: -20px 10px 20px rgba(0,0,0, 1);;
+    backdrop-filter: blur(20px);
+
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.c{
+    text-align: center;
+}
+
+.t{
+    position: relative;
+    font-size: 35px;
+    top: 0.4%;
+}
+
+.mg{
+    margin-top: 10%;
+}
+
+.h{
+    font-size: 40px;
+}
+
+.r{
+    border: 1px solid red;
+
+}
+
+.boxdesign{
+    background-color: rgba(17,17,17, 0.8);
+    border: 1px solid rgba(25,25,25, 0.8);
+    border-radius: 5px;
+    box-shadow: -20px 10px 20px rgba(0,0,0, 1);
+    backdrop-filter: blur(20px);
+
+    color: white;
+}
+
+/*Über Mich CSS*/
+.umain {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+    flex-direction: row; 
+}
+
+.uhmain, .upmain {
+    text-align: center;
+    height: fit-content;
+    font-size: 15px;
+
+    margin-top: 2.5%;
+}
+
+
+.m {
+    margin: 0;
+    padding: 0;
+}
+
+.up {
+    padding: 20px;
+    
+}
+
+
+/*Portfolio CSS*/
+
+.pmain{
+    background-image: url(img/htmlcode.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 5px;
+    box-shadow: -20px 10px 20px rgba(0,0,0, 1);
+    backdrop-filter: blur(20px);
+
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    margin-top: 2.5%;
+    padding: 0;
+
+    /*Hacky thing I will change*/
+    border: .5px solid #111;
+    
+}
+
+.pcs{
+    color: white;
+    font-size: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: fit-content;
+
+    background-color: rgba(17,17,17, 0.8);
+
+    border: 1px solid rgba(25,25,25, 0.8);
+    border-radius: 5px;
+    box-shadow: -20px 10px 20px rgba(0,0,0, 1);;
+    backdrop-filter: blur(20px);
+
+}
+
+
+
+/*Schule CSS*/
+
+.smain {
+    background: url(img/books.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 2.5%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 5px;
+    box-shadow: -20px 10px 20px rgba(0,0,0, 1);
+    backdrop-filter: blur(20px);
+
+    height: fit-content;
+    width: 100%;
+}
+
+.shead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; /* Verteilt die Elemente gleichmäßig */
+    align-items: center; /* Optional: Zentriert die Elemente vertikal */
+    padding: 20px; /* Optional: Abstand um den gesamten Bereich */
+}
+
+.sheadmargin1{
+    margin-top: 2.5%;
+}
+
+
+
+.sheadtext {
+    height: fit-content;
+    width: 300px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center; /* Optional: Zentriert den Text innerhalb der `.sheadtext`-Container */
+    color: white;
+    background-color: rgba(17,17,17, 0.8);
+    border: 1px solid rgba(25,25,25, 0.8);
+    border-radius: 5px;
+    box-shadow: -20px 10px 20px rgba(0,0,0, 1);
+    text-shadow: -4px 2px 5px black;
+    backdrop-filter: blur(20px);
+}
+
+
+.koncontainer{
+    background-image: url(img/mockmaps.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    border-radius: 5px;
+    box-shadow: -20px 10px 20px rgba(0,0,0, 1);
+    backdrop-filter: blur(20px);
+
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    margin-top: 2.5%;
+    padding: 0;
+}
+
+.konbox{
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.adpad{
+    padding: 30px;
+    margin-left: 5%;
+}
+
+.mailpad{
+    padding: 30px;
+    position: relative;
+    top: 80%;
+    left: 50%;
+}
+
+.konfit{
+    width: fit-content;
+    height: auto;
+}
+
+td{
+    color:white;
+    font-size: 35px;
+}
+
+#topbtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #111; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    box-shadow: -5px 2px 10px #f1f1f1;
+    border: 1px solid rgba(220,220,220,0.3)
+  }
+  
+  #topbtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
