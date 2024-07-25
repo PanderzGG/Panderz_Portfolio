@@ -58,38 +58,47 @@ body{
 }
 
 /*--------Über Mich CSS--------*/
-.ucontent{
-    width: 70%;
-    height: 95%;
-
-    margin-top: 1%;
-
-    
-    justify-content: center;
+.uwrapper{
+    display: grid;
+    justify-items: center;
     align-items: center;
-    flex-direction: column;
-
+    margin: 2rem;
+    grid-template-rows: repeat(8, 100px);
+    grid-template-columns: repeat(12, 1fr);
     box-shadow: -10px 5px 20px rgba(0,0,0, 1);
     border-radius: 5px;
-    background-color: ;
+    background-color: transparent;
     backdrop-filter: blur(50px);
-
 }
 
-.umain {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-around; 
-    flex-direction: row; 
-}
-
-.uhmain, .upmain {
-    text-align: center;
+.willkommen-box{
     height: fit-content;
+    width: fit-content;
     font-size: 15px;
 
-    margin-top: 2.5%;
+    grid-row: 1 / 3;
+    grid-column: 2 / 7;
+}
+
+.uebermich{
+    height: fit-content;
+    width: fit-content;
+    font-size: 15px;
+
+    grid-row: 3 / 8;
+    grid-column: 5 / 12;
+}
+
+.panderz-grid{
+    z-index: -1;
+    
+    grid-row: 3 / 5;
+    grid-column: 3 / 5;
+}
+
+.panderzv1{
+    border-radius: 100%;
+    scale: .5;
 }
 
 
