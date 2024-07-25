@@ -23,11 +23,17 @@ body, html {
     margin-top: 0;
     margin-bottom: 0;
 
+    
+
     display: flex;
     justify-content: center;
 
     padding: 0;
-    margin-top: 0;
+}
+
+
+body{
+    background-color: rgb(238, 234, 234);
 }
 
 .bhidden{
@@ -35,18 +41,69 @@ body, html {
 }
 
 .content{
+    width: 80%;
+    height: fit-content;
+
+    margin-top: 1%;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    box-shadow: -10px 5px 20px rgba(0,0,0, 1);
+    border-radius: 5px;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+
+}
+
+/*--------Über Mich CSS--------*/
+.ucontent{
     width: 70%;
-    height: 100vh;
+    height: 95%;
+
+    margin-top: 1%;
 
     
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
+    box-shadow: -10px 5px 20px rgba(0,0,0, 1);
+    border-radius: 5px;
+    background-color: ;
+    backdrop-filter: blur(50px);
+
+}
+
+.umain {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+    flex-direction: row; 
+}
+
+.uhmain, .upmain {
+    text-align: center;
+    height: fit-content;
+    font-size: 15px;
+
+    margin-top: 2.5%;
 }
 
 
-/*Karriere HTML*/
+.m {
+    margin: 0;
+    padding: 0;
+}
+
+.up {
+    padding: 20px;
+    
+}
+
+/*--------Karriere HTML--------*/
 .Kopf{
     height: 24.9vh;
 
@@ -69,7 +126,7 @@ body, html {
     width: 50%;
     height: 25vh;
     margin: 0;
-    padding-right: 15%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +138,7 @@ body, html {
     scale: 20%;
     border: 20px solid black;
 
-    box-shadow: -30px 2px 40px black;
+    box-shadow: -10px 5px 20px rgba(0,0,0, 1);
 }
 
 #mod{
@@ -93,7 +150,7 @@ body, html {
     text-align: left;
     font-weight: bold;
 
-    text-shadow: -11px 2px 15px rgba(100,100,100,.5);
+    text-shadow: -10px 2px 15px rgba(100,100,100,.5);
 
 }
 
@@ -105,7 +162,7 @@ body, html {
     font-weight: bold;
     margin: 0;
 
-    text-shadow: -11px 2px 15px rgba(100,100,100,.5);
+    text-shadow: -10px 2px 15px rgba(100,100,100,.5);
 }
 
 .sidenav {
@@ -117,8 +174,11 @@ body, html {
     left: 0;
     background-color: #111;
     overflow-x: hidden; 
-    padding-top: 60px; 
-    transition: 0.5s;
+    padding-top: 80px; 
+    transition: 0.8s;
+
+    
+
 }
   
 .sidenav a {
@@ -154,6 +214,7 @@ body, html {
     cursor: pointer;
     text-align: center;
     
+    
 }
 
 .oNav:hover{
@@ -177,9 +238,9 @@ body, html {
     padding: auto;
     margin: auto;
     color: black;
-    font-size: 45px;
+    font-size: 30px;
 
-    text-shadow: -11px 2px 15px rgba(100,100,100,.5);
+    text-shadow: -10px 2px 15px rgba(100,100,100,.5);
 
 }
 
@@ -190,14 +251,13 @@ body, html {
     justify-content: space-evenly;
     align-items: center;
 
-    margin-top: 1%;
-    margin-bottom:  1%;
+    margin: 2rem;
     
     border-radius: 5px;
-    box-shadow: -20px 10px 20px rgba(0,0,0, 1);
+    box-shadow: -10px 5px 20px rgba(0,0,0, 1);
 
     height: fit-content;
-    width: 100%;
+    width: fit-content;
 }
 
 .kcontainer:nth-child(2){
@@ -219,13 +279,13 @@ body, html {
     padding: 0.4%;
     margin: 3%;
     color: white;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: -10px 2px 15px black;
     width: 40%;
     background-color: rgba(17,17,17, 0.8);
 
     border: 1px solid rgba(25,25,25, 0.8);
     border-radius: 5px;
-    box-shadow: -20px 10px 20px rgba(0,0,0, 1);;
+    box-shadow: -20px 10px 20px rgba(0,0,0, 1);
     backdrop-filter: blur(20px);
     
 
@@ -245,7 +305,7 @@ body, html {
     background-color: rgba(17,17,17, 0.8);
     border: 1px solid rgba(25,25,25, 0.8);
     border-radius: 5px;
-    box-shadow: -20px 10px 20px rgba(0,0,0, 1);;
+    box-shadow: -20px 10px 20px rgba(0,0,0, 1);
     backdrop-filter: blur(20px);
 
     color: white;
@@ -280,42 +340,14 @@ body, html {
     background-color: rgba(17,17,17, 0.8);
     border: 1px solid rgba(25,25,25, 0.8);
     border-radius: 5px;
-    box-shadow: -20px 10px 20px rgba(0,0,0, 1);
+    box-shadow: -10px 5px 20px rgba(0,0,0, 1);
     backdrop-filter: blur(20px);
 
     color: white;
 }
 
-/*Über Mich CSS*/
-.umain {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-around; 
-    flex-direction: row; 
-}
 
-.uhmain, .upmain {
-    text-align: center;
-    height: fit-content;
-    font-size: 15px;
-
-    margin-top: 2.5%;
-}
-
-
-.m {
-    margin: 0;
-    padding: 0;
-}
-
-.up {
-    padding: 20px;
-    
-}
-
-
-/*Portfolio CSS*/
+/*--------Portfolio CSS--------*/
 
 .pmain{
     background-image: url(img/htmlcode.jpg);
@@ -323,7 +355,7 @@ body, html {
     background-repeat: no-repeat;
 
     border-radius: 5px;
-    box-shadow: -20px 10px 20px rgba(0,0,0, 1);
+    box-shadow: -10px 5px 20px rgba(0,0,0, 1);
     backdrop-filter: blur(20px);
 
     height: 50%;
@@ -333,6 +365,8 @@ body, html {
     align-items: center;
     background-repeat: no-repeat;
     margin-top: 2.5%;
+    margin-left: 2rem;
+    margin-right: 2rem;
     padding: 0;
 
     /*Hacky thing I will change*/
@@ -345,11 +379,10 @@ body, html {
     background-repeat: no-repeat;
 
     border-radius: 5px;
-    box-shadow: -20px 10px 20px rgba(0,0,0, 1);
+    box-shadow: -10px 5px 20px rgba(0,0,0, 1);
     backdrop-filter: blur(20px);
 
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 2rem;
     
     display: grid;
     justify-items: center;
@@ -371,7 +404,7 @@ body, html {
 
     border: 1px solid rgba(25,25,25, 0.8);
     border-radius: 5px;
-    box-shadow: -20px 10px 20px rgba(0,0,0, 1);;
+    box-shadow: -10px 5px 20px rgba(0,0,0, 1);
     backdrop-filter: blur(20px);
 
 }
@@ -388,11 +421,15 @@ body, html {
     grid-row: 5 / 8;
     grid-column: 2 / 7;
 }
+.pcs:nth-child(4){
+    grid-row: 5 / 8;
+    grid-column: 7 / 12;
+}
 
 
 
 
-/*Tech CSS*/
+/*--------Tech CSS--------*/
 
 .tmain {
 
@@ -410,14 +447,38 @@ body, html {
     justify-content: space-between;
     align-items: center;
 
-    margin-top: 1%;
-    margin-bottom:  1%;
-
+    margin: 2rem;
     padding: 2rem;
     
     border-radius: 5px;
-    box-shadow: -20px 10px 20px rgba(0,0,0, 1);
+    box-shadow: -10px 5px 20px rgba(0,0,0, 1);
     
+}
+
+.tcontainer:nth-child(1){
+    background-image: url("img/htmlcode.jpg");
+    background-size: cover;
+
+}
+.tcontainer:nth-child(2){
+    background-image: url("img/csscode.jpg");
+    background-size: cover;
+
+}
+.tcontainer:nth-child(3){
+    background-image: url("img/jscode.jpg");
+    background-size: cover;
+
+}
+.tcontainer:nth-child(4){
+    background-image: url("img/SQLcode.jpg");
+    background-size: cover;
+
+}
+.tcontainer:nth-child(5){
+    background-image: url("img/ccode.jpg");
+    background-size: cover;
+
 }
 
 .boxs{
@@ -442,7 +503,7 @@ body, html {
     max-width: 600px;
 }
 
-/*Kontakt CSS*/
+/*--------Kontakt CSS--------*/
 .koncontainer{
     background-image: url(img/mockmaps.png);
     background-size: cover;
@@ -450,7 +511,7 @@ body, html {
 
 
     border-radius: 5px;
-    box-shadow: -20px 10px 20px rgba(0,0,0, 1);
+    box-shadow: -10px 5px 20px rgba(0,0,0, 1);
     backdrop-filter: blur(20px);
 
     height: 50%;
@@ -459,8 +520,11 @@ body, html {
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
-    margin-top: 2.5%;
-    padding: 0;
+    margin: 2rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .konbox{
@@ -506,7 +570,7 @@ td{
     padding: 15px;
     border-radius: 10px;
     font-size: 18px;
-    box-shadow: -5px 2px 10px #f1f1f1;
+    box-shadow: -10px 5px 20px rgba(0,0,0, 1);
     border: 1px solid rgba(220,220,220,0.3)
   }
   
