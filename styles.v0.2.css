@@ -124,6 +124,7 @@ body{
 
 .navbar a:hover {
   background-color: #000;
+  border-radius: 5px
 }
   
 .navbar a.active {
