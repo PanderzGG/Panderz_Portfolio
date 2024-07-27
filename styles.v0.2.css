@@ -129,10 +129,10 @@ body{
   
 .navbar a.active {
     background-color: #000;
+    border-radius: 5px;
 }
 
 .content{
-    /* width: 80%; */
     height: fit-content;
 
     margin-top: 1%;
