@@ -27,7 +27,7 @@ body, html {
 
     display: flex;
     justify-content: center;
-
+    width: 80%;
     padding: 0;
 }
 
@@ -40,8 +40,98 @@ body{
     overflow: hidden;
 }
 
+.Kopf{
+    height: 24.9vh;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.Kopf1{
+    width: 50%;
+    height: 25vh;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-basis: auto;
+}
+
+.Kopf2{
+    width: 50%;
+    height: 25vh;
+    margin: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.panderzv2{
+    border-radius: 100%;
+    scale: 30%;
+    border: 20px solid black;
+
+    box-shadow: -10px 5px 20px rgba(0,0,0, 1);
+}
+
+#mod{
+    padding: 0;
+    font-size: 30px;
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    text-align: left;
+    font-weight: bold;
+
+    text-shadow: -10px 2px 15px rgba(100,100,100,.5);
+
+}
+
+#web{
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+
+    text-shadow: -10px 2px 15px rgba(100,100,100,.5);
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgba(17,17,17, 0.8);
+    overflow: auto;
+    text-align: center;
+    box-shadow: -10px 5px 20px rgba(0,0,0, 1);
+}
+
+.navbar a {
+    float: left;
+    padding: 12px;
+    margin-left: 2.3rem;
+    margin-right: auto;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 15%;
+    text-align: center;
+}
+  
+
+.navbar a:hover {
+  background-color: #000;
+}
+  
+.navbar a.active {
+    background-color: #000;
+}
+
 .content{
-    width: 80%;
+    /* width: 80%; */
     height: fit-content;
 
     margin-top: 1%;
@@ -115,130 +205,10 @@ body{
 }
 
 /*--------Karriere HTML--------*/
-.Kopf{
-    height: 24.9vh;
-
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-}
-
-.Kopf1{
-    width: 50%;
-    height: 25vh;
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    flex-basis: auto;
-}
-
-.Kopf2{
-    width: 50%;
-    height: 25vh;
-    margin: 0;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.panderzv2{
-    border-radius: 100%;
-    scale: 30%;
-    border: 20px solid black;
-
-    box-shadow: -10px 5px 20px rgba(0,0,0, 1);
-}
-
-#mod{
-    padding: 0;
-    font-size: 30px;
-    width: fit-content;
-    height: fit-content;
-    margin: 0;
-    text-align: left;
-    font-weight: bold;
-
-    text-shadow: -10px 2px 15px rgba(100,100,100,.5);
-
-}
-
-#web{
-    width: fit-content;
-    height: fit-content;
-    padding: 0;
-    font-size: 60px;
-    font-weight: bold;
-    margin: 0;
-
-    text-shadow: -10px 2px 15px rgba(100,100,100,.5);
-}
-
-.sidenav {
-    height: 100%; 
-    width: 0; 
-    position: fixed;
-    z-index: 1; 
-    top: 0; 
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden; 
-    padding-top: 80px; 
-    transition: 0.8s;
-
-    
-
-}
-  
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-  
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-.oNav{
-    display: block;
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    background-color: #111;
-    color:#818181;
-    padding: 14px 28px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-    
-    
-}
-
-.oNav:hover{
-    background-color: #111;
-    color: #818181;
-    box-shadow: -3px 2px 10px #111;
-}
-
-
 
 .bwrapper{
     display: flex;
-    flex-shrink: 0;
+    flex-shrink: 1;
     flex-direction: column;
     margin: 0;
 }
@@ -285,13 +255,12 @@ body{
 }
 
 .jahr{
-    width: 300px;
-    height: 300px;
+    width: 33rem;
+    height: fit-content;
     padding: 0.4%;
     margin: 3%;
     color: white;
     text-shadow: -10px 2px 15px black;
-    width: 40%;
     background-color: rgba(17,17,17, 0.8);
 
     border: 1px solid rgba(25,25,25, 0.8);
@@ -303,15 +272,12 @@ body{
 }
 
 .beruftext{
-    width: 50%;
-    height: fit-content;
-    padding-left: 2%;
-    padding-right: 2%;
+    width: 40%;
+    height: 30%;
+    padding: 2rem;
     margin: 3%;
     
     text-align: justify;
-
-    height: 300px;
     
     background-color: rgba(17,17,17, 0.8);
     border: 1px solid rgba(25,25,25, 0.8);
@@ -332,10 +298,6 @@ body{
     position: relative;
     font-size: 35px;
     top: 0.4%;
-}
-
-.mg{
-    margin-top: 10%;
 }
 
 .h{
